@@ -15,6 +15,20 @@ class AdminAuthenticated
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+        if( Auth::check() )
+        {
+            // if user is not admin take him to his dashboard
+            if ( Auth::user()->isUser() ) {
+                return redirect('user');
+           }
+
+           // allow admin to proceed with request
+           else if ( Auth::user()->isAdmin() ) {
+                return $next($request);
+           }
+        }
+
+        abort(404);  // for other user throw 404 error
+
     }
 }
