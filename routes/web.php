@@ -25,4 +25,4 @@ Route::get('/user', function () {
     return view('user');
 });
 
-Route::view('superadmin','superadmin');
+Route::get('superadmin','SuperadminController@index');
