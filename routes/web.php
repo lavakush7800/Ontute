@@ -26,3 +26,4 @@ Route::get('/user', function () {
 });
 
 Route::get('superadmin','SuperadminController@index');
+Route::post('save','SuperadminController@store');
