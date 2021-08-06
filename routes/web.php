@@ -29,4 +29,4 @@ Route::get('superadmin','SuperadminController@index');
 Route::post('save','SuperadminController@store');
 Route::get('superadminShow','SuperadminController@show');
 Route::get('superadminEdit','SuperadminController@edit');
-Route::get('superadminShow','SuperadminController@delete');
+Route::post('superadminShow','SuperadminController@delete');
