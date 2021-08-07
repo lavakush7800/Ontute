@@ -25,8 +25,8 @@ Route::get('/user', function () {
     return view('user');
 });
 
-Route::get('superadmin','SuperadminController@index');
-Route::post('save','SuperadminController@store');
-Route::get('superadminShow','SuperadminController@show');
-Route::get('superadminEdit','SuperadminController@edit');
-Route::post('superadminShow','SuperadminController@delete');
+Route::get('superadmin','Crud\SuperadminController@index');
+Route::post('save','Crud\SuperadminController@store');
+Route::get('superadminShow','Crud\SuperadminController@show');
+Route::get('superadminEdit','Crud\SuperadminController@edit');
+Route::post('superadminShow','Crud\SuperadminController@delete');
