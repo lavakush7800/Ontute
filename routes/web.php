@@ -30,3 +30,7 @@ Route::post('save','Crud\SuperadminController@store');
 Route::get('superadminShow','Crud\SuperadminController@show');
 Route::get('superadminEdit','Crud\SuperadminController@edit');
 Route::post('superadminShow','Crud\SuperadminController@delete');
+
+
+
+Route::get('users', ['uses'=>'UserController@index', 'as'=>'users.index']);
