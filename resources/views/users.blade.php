@@ -15,7 +15,7 @@
 <body>
     
 <div class="container">
-    <h1>Laravel 7 Datatables Tutorial <br/> HDTuto.com</h1>
+    <center><h1>Fakers Data</h1></center>
     <table class="table table-bordered data-table">
         <thead>
             <tr>
