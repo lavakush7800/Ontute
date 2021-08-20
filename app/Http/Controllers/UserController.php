@@ -22,7 +22,6 @@ class UserController extends Controller
                     ->addColumn('action', function($row){
    
                            $btn = '<a href="javascript:void(0)" class="edit btn btn-primary btn-sm btn-block">View</a>';
-                           $btn = '<a href="javascript:void(0)" class="edit btn btn-primary btn-sm btn-block">View</a>';
 
                             return $btn;
                     })
